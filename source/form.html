@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -15,24 +16,25 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a>Главная</a>
+                <a class="site-list__link site-list__link--active">Главная</a>
               </li>
 
               <li class="site-list__item">
-                <a href="photo.html">Фото и Видео</a>
+                <a class="site-list__link href="photo.html">Фото и Видео</a>
               </li>
 
               <li class="site-list__item">
-                <a href="form.html">Форма отзыва</a>
+                <a class="site-list__link href="form.html">Форма отзыва</a>
               </li>
 
               <li class="site-list__item">
-                <a href="#">HTML Academy</a>
+                <a class="site-list__link href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
           </div>
       </nav>
     </header>
+
 
     <main class="page-main">
         <section class="welcome">
@@ -53,17 +55,17 @@
                 <ul class="review__id">
                   <li class="review__id-item">
                     <label class="review__id-label" for="name">Имя*:</label>
-                    <input type="text" id="name" name="name" placeholder="Петр">
+                    <input class="review__id-input" type="text" id="name" name="name" placeholder="Петр">
                   </li>
 
                   <li class="review__id-item">
                     <label class="review__id-label" for="surname">Фамалия*:</label>
-                    <input type="text" id="surname" name="surname" placeholder="Иванов">
+                    <input class="review__id-input" type="text" id="surname" name="surname" placeholder="Иванов">
                   </li>
 
                   <li class="review__id-item">
                     <label class="review__id-label" for="middlename">Отчество:</label>
-                    <input type="text" id="middlename" name="middlename" placeholder="Александрович">
+                    <input class="review__id-input" type="text" id="middlename" name="middlename" placeholder="Александрович">
                   </li>
                 </ul>
             </fieldset>
@@ -73,15 +75,15 @@
                 <ul class="review__contacts">
                   <li class="review__contacts-item">
                     <label class="review__contacts-label" for="tel">Контактный телефон*:</label>
-                    <div class="review__contacts-input">
-                      <input type="tel" id="tel" name="tel" placeholder="Введите телефон">
+                    <div class="review__contacts-info">
+                      <input class="review__contacts-input" type="tel" id="tel" name="tel" placeholder="Введите телефон">
                         <button class="review__contacts-button" type="button">Набрать номер</button>
                     </div>
                   </li>
                   <li class="review__contacts-item">
                     <label class="review__contacts-label" for="email">Электронная почта*:</label>
-                    <div class="review__contacts-input">
-                      <input type="email" id="email" name="email" placeholder="Введите e-mail">
+                    <div class="review__contacts-info">
+                      <input class="review__contacts-input" type="email" id="email" name="email" placeholder="Введите e-mail">
                         <button class="review__contacts-button" type="button">Отправить письмо</button>
                     </div>
                   </li>
@@ -130,7 +132,7 @@
                   <textarea class="review__emotions" name="emotions" rows="10">Опишите подробно все свои восторги</textarea>
                 </fieldset>
 
-                <input type="submit" value="Отправить отзыв">
+                <input class="rewiew__button button" type="submit" value="Отправить отзыв">
 
           </form>
 
